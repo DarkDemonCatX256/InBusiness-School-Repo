@@ -1,0 +1,902 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+    /*Removes white space from website borders.*/
+    *
+    {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    section
+    {
+        padding: 70px 0;
+    }
+    /*Sets all headers 2 to this specific spec*/
+    h2
+    {
+        font-weight: lighter;
+        font-size : 1.875rem;
+    }
+     /*Sets all headers 3 to this specific spec*/
+    h3
+    {
+    
+        font-size : 1.5rem;
+    }
+    /*makes all normal text light and dainty*/
+    p
+    {
+        font-weight: lighter;
+    }
+    /*Sets main font and font color for the whole page*/
+    body
+    {
+        color : #FFFFFF;
+        font-size: 1em;
+        font-family: SEGOE UI, sans-serif;
+    }
+    .flex
+    {
+        display: flex;
+    }
+    /*No stupid underlines or points for lists*/
+    li
+    {
+        list-style-type: none;
+    }
+    /*Sets links to be white and have no dumb underline*/
+    a
+    {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    .header-top button
+    {
+        background: transparent;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    /*Sets the header background and color.*/
+    header
+    {
+        background: url(../img/headerBkg.jpg);
+        background-size: 100% 100%;
+        color: #FFFFFF;
+        
+    }
+    .header-top .container
+    {
+        marign: 0 auto;
+        width: 72.938em;
+        justify-content: space-between;
+    }
+    .header-bottom .container
+    {
+        margin: 0 auto;
+        width: 72.938em;
+        height: 100%;
+    }
+    /*The actual heading bar*/
+    .header-top
+    {
+        width: 100%;
+        background: #515f67;
+        opacity: 0.9;
+        height: 120px;
+    }
+    .homebar-items li
+    {
+        font-size: 0.875rem;
+        display: inline;
+        color: white;
+    }
+    .logo h1
+    {
+        margin: 0;
+        padding: 40px 0;
+        font-size: 1.875rem;
+    }
+    .logo span
+    {
+        color: #4bcaff;
+    }
+    ul.homebar-items
+    {
+
+        word-spacing:3.125em;
+        padding: 50px 0;
+    }
+    ul.homebar-items span
+    {
+        color: #4bcaff;
+        border:  2px solid #4bcaff;
+        padding: 5px 10px 5px 10px;
+    }
+    ul.header-bottom
+    {
+        height: 10%;
+    }
+    .slogan
+    {
+        margin: 20% 0;
+        text-align: center;
+    }
+    .slogan h2
+    {
+        padding: 0.313em;
+        background: #515f67;
+        display: inline-block;
+        font-size: 2.4rem;
+        opacity: 0.9;
+        margin: 0 0 0.625em 0;
+    }
+
+
+    /*THE SERVICE SECTION*/
+
+    .container
+    {
+        max-width: 72.938em;
+        margin: 0 auto;
+    }
+    section.services
+    {
+        background: #4bcaff;
+    }
+    .title
+    {
+        padding-bottom: 30px;
+
+    }
+    .title h2:first-child
+    {
+        margin-right: -4px;
+        border-bottom: 2px solid #FFFFFF;
+    }
+    .title h2
+    {
+        display: inline;
+    }
+    .service-items
+    {
+        justify-content: space-between;
+    }
+    .service-item
+    {
+        width: 23%;
+    }
+    .service-item h3
+    {
+        padding: 20px 0;
+    }
+    /*Portfolio!!!*/
+    section.portfolio
+    {
+        color: #515f67;
+    }
+    section.portfolio .title h2:first-child
+    {
+        border-color: #515f67;
+    }
+    .portfolio-top a
+    {
+
+        word-spacing: 30px;
+        color: #515f67;
+    }
+    .portfolio-top .nav-items
+    {
+        display: flex;
+
+        word-spacing:3.125em;
+
+        padding: 50px 0;
+    }
+    .portfolio-top .nav-items a
+    {
+       word-spacing:3.125em;
+       margin-left: 50px;
+        padding: 50px 0;
+    }
+    .portfolio-top
+    {
+        justify-content: space-between;
+    }
+    .portfolio-items:first-child
+    {
+        margin: 45px 0 0 0;
+    }
+    .portfolio-items
+    {
+        justify-content: space-between;
+        margin-top: 25px;
+        flex-wrap: wrap;
+    }
+    .portfolio-item
+    {
+    .position: relative;
+    }
+
+
+    /*VIMEO SECTION*/
+    section.vimeo-region
+    {
+        background : #515f67;
+    }
+    .vimeo-info
+    {
+        justify-content: space-between;
+    }
+    .info-item
+    {
+        width: 40%;
+    }
+    .info-item p:nth-child(2)
+    {
+        margin: 22px 0;
+    }
+    .info-item button
+    {
+        padding: 10px 35px;
+        color : #353f46;
+        font-weight: bold;
+        font-size: 0.875rem;
+        border: 2px solid #353f46;
+        background: transparent;
+        outline: none;
+    }
+    .vimeo-player
+    {
+        margin-top: -70px;
+    }
+    /*Twitter SECTION!!!*/
+    section.twitter-region
+    {
+        background :#4bcaff;
+    }
+    .twitter-top
+    {
+        justify-content: space-between;
+    }
+    section.twitter-region p
+    {
+        font-size: 1.75rem;
+    }
+    section.twitter-region span 
+    {
+        font-weight: normal;
+    }
+
+    /*Who Am I? Section*/
+
+    section.who-am-I
+    {
+        background: url(../img/mancamera.jpg);
+        background-size : 100% 100%;
+        padding : 70px 0 100px 0;
+    }
+    .who-am-I flex
+    {
+        justify-content: space-between;
+    }
+    .who-am-I .item
+    {
+        width: 47%;
+    }
+    .who-am-I .item p
+    {
+        margin: 0 0 30px 0;
+    }
+    /*testimonial section*/
+    section.testimonials
+    {
+        color:#515f67;
+    }
+    testimonials-top
+    {
+        justify-content: space-between;
+    }
+    section.testimonials.title h2:first-child
+    {
+        border-color: #515f67;
+    }
+    section.testimonials p
+    {
+        font-size: 1.75rem;
+    }
+    section.testimonials p:nth-child(2)
+    {
+        margin: 15px 0 0 0;
+    }
+    section.testimonials span
+    {
+        font-size: 0.875rem;
+        color :#4bcaff;
+        font-weight: bold;
+        margin: 40px 0 0 0;
+    }
+    
+    /*Contact SECTIOn*/
+
+    section.contact
+    {
+        background: url(../img/contact.png);
+        background-size : 100% 100%;
+    }
+    .form-top
+    {
+        justify-content: space-between;
+    }
+    .form-top fieldset
+    {
+        width: 44%;
+    }
+    fieldset
+    {
+        border: 0;
+        margin: 0;
+        padding: 0;
+    }
+    .form-top label:first-child
+    {
+        margin: 0 0 5px 0;
+    }
+    label
+    {
+        display: block;
+        font-size: 0.875rem;
+        font-weight: bold;
+        margin: 35px 0 5px 0;
+    }
+    .form-top input
+    {
+        height: 32px;
+        width: 100%;
+    }
+    .form-top input, textarea
+    {
+        border: 2px solid #FFFFFF;
+        background: transparent;
+        padding: 5px;
+        outline: none;
+    }
+    textarea
+    {
+        height: 11.250em;
+        resize: none;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    input[type = "submit"]
+    {
+        margin: 30px 0 0 0;
+        padding: 15px 120px;
+        background: #4bcaff;
+        font-weight: bold;
+        font-size: 0.875rem;
+    }
+    .form-top .contact-info
+    {
+        width: 46%;
+        margin: 20px 0 0 0;
+    }
+    .contact-info p:nth-child(2)
+    {
+        margin: 35px 0 0 0;
+    }
+    /*LE FOOT*/
+    footer
+    {
+        background : #353f47;
+        color: #515f67;
+        font-size: 0.75rem;
+    }
+    footer .container
+    {
+        justify-content: space-between;
+        padding: 60px 0;
+    }
+    ul.footer-navs li
+    {
+        padding-left: -10px;
+        padding-right: 15px;
+        border-right: 1px solid #515f67;
+        display: inline;
+    }
+    .footer-item:first-child
+    {
+        padding: 0 12px 0 0;
+    }
+    .footer-item a
+    {
+        color: #515f67;
+    }
+    .footer-item
+    {
+        display: inline;
+        border-right: 1px solid #515f67;
+        padding: 0 12px;
+    }
+    .footer-item:last-child
+    {
+        border:none;
+    }
+
+    @media only screen and (max-width: 1280px) 
+    {
+        .title
+        {
+           
+            padding-bottom: 30px;
+        }
+        .slogan h2
+        {
+            font-size: 0.875rem;
+        }
+        .title h2:first-child
+        {
+            margin-right: -4px;
+            border-bottom: -16px solid #FFFFFF;
+        }
+        .flex
+        {
+            display: inline;
+            width: 100%;
+        }
+        .header-top h1
+        {
+            margin: 50% 0.01%;
+            margin-top: -40px;
+            justify-content: center;
+            text-align: center;
+        }
+         ul
+        
+        {
+            display: flex;
+            flex-direction: column;
+            padding: 50%;
+            
+        }
+            ul.homebar-items
+        {
+            display: inline;
+            word-spacing:2.125em;
+            position: absolute;
+            top:0px;
+            left: 15%;
+            height: 60px;
+            width: 75%;
+
+         
+        }
+        ul.homebar-items span
+        {
+            color: #4bcaff;
+            border:  2px solid #4bcaff;
+            padding: 5px 10px 5px 10px;
+        }
+        .header-bottom .container
+        {
+            width: 75%;
+        }
+        .container
+        {
+            padding: 12px;
+            margin: 0 auto;
+            width: 75%;
+            height: 100%;
+            
+
+
+        }
+        .service-items.flex
+        {
+            display: table-row;
+        }
+        .service-item
+        {
+            width: 100%;
+        }
+       section.service-items
+       {
+        width: 100%;
+        padding: 5px;
+        height: auto;
+        flex-direction: column;
+       }
+       .portfolio-top .title h2
+       {
+            justify-content: center;
+            
+       }
+       
+       .portfolio-top
+       {
+        align-items: center;
+        flex-direction: column;
+       }
+       
+      
+       .portfolio-items .flex
+       {
+        justify-content: space-between;
+        display: flex;
+        width: 100%;
+        margin-left: 40px;
+       }
+       .portfolio-top .nav-items a
+       {
+        margin-left: 25%;
+        
+       }
+       .portfolio-items .nav-items
+       {
+        text-align: center;
+       }
+       .portfolio-bottom 
+       {
+        align-content: center;
+        margin: 0 auto;
+        text-align: center;
+       }
+      .twitter-region
+      {
+        width: 100%;
+        height: 100%;
+      }
+      .vimeo-region
+      {
+        
+        width: 100%;
+        height: 100%;
+      }
+      .vimeo-region
+      {
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+      }
+      .vimeo-region .vimeo-info
+      {
+
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+      }
+      .vimeo-region .vimeo-info .info-item
+      {
+        width: 100%;
+        
+      }
+      .vimeo-info
+      {
+        width: 75%;
+        flex-direction: column;
+        align-items: center;
+      }
+      .vimeo-info p
+      {
+        width: 100%;
+        text-align: center;
+      }
+      .vimeo-player
+      {
+        margin: 0 auto;
+        width: 70%;
+        height: auto;
+        order: -1;
+      }
+      .vimeo-info .flex
+      {
+        display: flex;
+      }
+      .who-am-I .container
+      {
+        align-content: center;
+      }
+      .who-am-I .item
+      {
+        width: 100%;
+      }
+        .footer-navs
+        {
+           flex-direction: row;
+           margin: 0 auto;
+           padding: 25%;
+        }
+        footer p
+        {
+            margin-left: 50%;
+            padding-bottom: 20px;
+
+        }
+        .container .contact-form p
+        {
+            justify-content: center;
+            text-align: center;
+
+
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
